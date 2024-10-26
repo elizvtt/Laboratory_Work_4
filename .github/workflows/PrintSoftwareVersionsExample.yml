@@ -1,4 +1,4 @@
-name: Print Software Versions
+name: Print Software Versions Example
 on:
   push:
     branches: main
