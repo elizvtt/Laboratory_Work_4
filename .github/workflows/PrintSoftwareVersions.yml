@@ -7,20 +7,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  check_data_processing_versions:
+  PrintDataProcessingVersions:
     runs-on: ubuntu-latest
     steps:
       - name: Print Node.js version
         run: node --version
-      - name: Print ОС version
-        run: |
-          echo "Linux Version:" && uname -a
+      - name: Print ОS Linux version
+        run: uname -a
 
-  check_database_version:
+  PrintDatabaseVersion:
     runs-on: ubuntu-latest
     steps:
       - name: Print SQLite version
         run: sqlite3 --version
-      - name: Виведення версії ОС
-        run: |
-          echo "Linux Version:" && uname -a
+      - name: Print ОS Linux version
+        run: uname -a
